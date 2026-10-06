@@ -12,7 +12,7 @@
 
     <header>
         <h1>My Personal Library</h1>
-        <button id="new-book-btn">= Add New Book</button>
+        <button id="new-book-btn">+ Add New Book</button>
     </header>
     
     <!-- Modal Dialog for adding Books -->
@@ -29,7 +29,16 @@
             <label for="read">
                 <input type="checkbox" id="read"> Have you read this book?
             </label>
+
+            <div class="form-buttons">
+                <button type="submit">Add Book</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </div>
+        </form>
      </dialog>
+
+     <!-- Container where book cards will render -->
+      <main id="library-container"></main>
 
 </body>
 </html>
